@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/Welcome'
+import SignIn from './components/SignIn'
+import ViewVideo from './components/ViewVideo'
+import PhotoGallery from './components/PhotoGallery'
 
 class App extends Component {
   render() {
@@ -22,6 +25,10 @@ class App extends Component {
           </a>
         </header>
         < Welcome />
+        < SignIn />
+        < ViewVideo />
+        < PhotoGallery />
+
       </div>
     );
   }
