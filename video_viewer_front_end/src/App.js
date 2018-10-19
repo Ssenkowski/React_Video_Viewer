@@ -8,11 +8,6 @@ import PhotoGallery from './components/PhotoGallery'
 
 class App extends Component {
   render() {
-
-    function clicked(){
-      console.log("CLICKED")
-    };
-
     return (
       <div className="App">
         <header className="App-header">

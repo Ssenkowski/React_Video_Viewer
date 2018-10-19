@@ -33,12 +33,29 @@
 
 .button-sign-in {
       color: #03A9F4;
-      background: #282c34;
+      background: #2f3d44;
       padding: 12px;
       margin: 75px;
       border-radius: 30%;
       font-size: 20px;
       font-weight: bold;
-      border-style: groove;
+      border-style: hidden;
       box-shadow: 10px 10px 10px black, 0px 3px 15px rgba(0,0,0,.4);
+      border-color: black
+}
+
+.button-sign-in:active {
+    background-image: linear-gradient(to bottom, rgb(88,154,204) 0%, rgb(90,150,199) 100%);
+    background-image: -o-linear-gradient(to bottom, rgb(88,154,204) 0%, rgb(90,150,199) 100%);
+    background-image: -moz-linear-gradient(to bottom, rgb(88,154,204) 0%, rgb(90,150,199) 100%);
+    background-image: -webkit-linear-gradient(to bottom, rgb(88,154,204) 0%, rgb(90,150,199) 100%);
+    background-image: -ms-linear-gradient(to bottom, rgb(88,154,204) 0%, rgb(90,150,199) 100%);
+ 
+    background-image: -webkit-gradient(
+        linear,
+        to left bottom,
+        to left top,
+        color-stop(0, rgb(88,154,204)),
+        color-stop(1, rgb(90,150,199))
+    );
 }

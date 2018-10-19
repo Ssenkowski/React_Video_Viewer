@@ -11,6 +11,7 @@ class SignIn extends Component {
 		this.setState(state => ({
 			isSigningIn: !state.isSigningIn
 		}));
+		console.log(this.state)
 	}
 
 	  render() {
