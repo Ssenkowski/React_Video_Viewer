@@ -31,6 +31,8 @@
   }
 }
 
+/* Sign-In Button */
+
 .button-sign-in {
       color: #03A9F4;
       background: #2f3d44;
@@ -59,3 +61,6 @@
         color-stop(1, rgb(90,150,199))
     );
 }
+
+/* Navbar */
+
