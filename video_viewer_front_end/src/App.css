@@ -34,15 +34,16 @@
 /* Sign-In Button */
 
 .button-sign-in {
-      color: #1bddff;
-      background: #040505;
-      padding: 30px;
-      margin: 150px;
-      border-radius: 30%;
-      font-size: 20px;
-      font-weight: bold;
-      border-style: hidden;
-      box-shadow: 10px 10px 10px black, 0px 3px 15px rgba(0,0,0,.4);
+    color: #1bddff;
+    background: #040505;
+    padding: 30px;
+    margin: 150px;
+    border-radius: 30%;
+    font-size: 22px;
+    font-weight: bold;
+    border-style: hidden;
+    box-shadow: 10px 10px 10px black, 0px 3px 15px rgba(0,0,0,.4);
+    font-family: cursive;
 }
 
 .button-sign-in:active {
@@ -97,6 +98,8 @@
       border-style: hidden;
       /*box-shadow: 10px 10px 10px black, 0px 3px 15px rgba(0,0,0,.4);
       border-color: black */
+      font-family: cursive;
+
 }
 
 .button-navbar:active {
