@@ -30,3 +30,15 @@
     transform: rotate(360deg);
   }
 }
+
+.button-sign-in {
+      color: #03A9F4;
+      background: #282c34;
+      padding: 12px;
+      margin: 75px;
+      border-radius: 30%;
+      font-size: 20px;
+      font-weight: bold;
+      border-style: groove;
+      box-shadow: 10px 10px 10px black, 0px 3px 15px rgba(0,0,0,.4);
+}

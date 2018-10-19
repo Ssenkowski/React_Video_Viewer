@@ -14,7 +14,9 @@ class SignIn extends Component {
 	}
 
 	  render() {
-	    return <button onClick={this.props.handleClick}> {this.state.isSigningIn ? 'Sign In' : 'Signing In...'} </button>;
+	    return <button className="button-sign-in" onClick={this.props.handleClick}
+	    		style= {this.styleButton}
+	   		   > {this.state.isSigningIn ? 'Sign In' : 'Signing In...'} </button>;
   }
 }
 
