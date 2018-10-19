@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #12191c;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,16 +34,15 @@
 /* Sign-In Button */
 
 .button-sign-in {
-      color: #03A9F4;
-      background: #2f3d44;
-      padding: 12px;
-      margin: 75px;
+      color: #1bddff;
+      background: #040505;
+      padding: 30px;
+      margin: 150px;
       border-radius: 30%;
       font-size: 20px;
       font-weight: bold;
       border-style: hidden;
       box-shadow: 10px 10px 10px black, 0px 3px 15px rgba(0,0,0,.4);
-      border-color: black
 }
 
 .button-sign-in:active {
@@ -64,3 +63,51 @@
 
 /* Navbar */
 
+.clearfix {
+    border-style: 1px solid;
+    border-color: #000000cc;
+    padding: 0px;
+    width: 100%;
+    background-color: #000000cc;
+    margin: 150px;
+    border-color: #000000cc;
+}
+
+.navbar {
+  color: #03A9F4;
+      background: #000000cc;
+      width: 100%;
+      padding: 0px;
+      margin: 75px;
+      font-size: 20px;
+      font-weight: bold;
+      border-style: solid;
+      box-shadow: 10px 10px 10px black, 0px 3px 15px rgba(0,0,0,.4);
+      border-color: black;
+}
+
+.button-navbar {
+    color: #1bddff;
+      background: #000000cc;
+      padding: 12px;
+      border-radius: 0%;
+      margin-right: 100px;
+      font-size: 20px;
+      font-weight: bold;
+      border-style: hidden;
+      /*box-shadow: 10px 10px 10px black, 0px 3px 15px rgba(0,0,0,.4);
+      border-color: black */
+}
+
+.button-navbar:active {
+  
+}
+
+.navbar-style{
+  float: left;
+  display: inline-block;
+}
+
+#about {
+  margin-left: 100px;
+}
