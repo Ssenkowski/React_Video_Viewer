@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/Welcome'
@@ -13,7 +14,8 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          < NavBar />
+          <NavBar />
+
           < Welcome />
           <img src={logo} className="App-logo" alt="logo" />
           < SignIn />
