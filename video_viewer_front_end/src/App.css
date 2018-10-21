@@ -6,6 +6,8 @@
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
+  margin-top: 60px;
+  margin-bottom: 60px; 
 }
 
 .App-header {
@@ -32,13 +34,16 @@
   }
 }
 
+h6{
+  color: white;
+}
 /* Sign-In Button */
 
 .button-sign-in {
     color: #1bddff;
     background: #040505;
     padding: 30px;
-    margin: 150px;
+    margin-bottom: 30px;
     border-radius: 30%;
     font-size: 22px;
     font-weight: bold;
@@ -71,7 +76,7 @@
     padding: 0px;
     width: 100%;
     background-color: #000000cc;
-    margin-bottom: 150px;
+    margin-bottom: 15px;
     border-color: #000000cc;
 
 }
@@ -121,6 +126,7 @@
 .fa {
     padding: 20px;
     margin: 10px;
+    margin-bottom: 50px;
     font-size: 30px;
     width: 30px;
     text-align: center;

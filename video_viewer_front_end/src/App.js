@@ -4,7 +4,7 @@ import './App.css';
 import Welcome from './components/Welcome'
 import SignIn from './components/SignIn'
 import ViewVideo from './components/ViewVideo'
-import PhotoGallery from './components/PhotoGallery'
+import PhotoGallery from './components/PhotoGallery/PhotoGallery'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 
@@ -14,6 +14,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           < NavBar />
+          < Welcome />
           <img src={logo} className="App-logo" alt="logo" />
           < SignIn />
           < Footer />
@@ -27,7 +28,6 @@ class App extends Component {
           </a>
         </header>
         < ViewVideo />
-        < Welcome />
         < PhotoGallery />
 
       </div>

@@ -5,9 +5,8 @@ const ViewVideo = () => (
   <VideoPlayer
     url="https://youtu.be/20dKBgFjC9k"
     poster=""
-    width={1200}
-    height={900}
-    autoplay
+    width={900}
+    height={600}
   />
 );
 
