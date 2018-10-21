@@ -22,6 +22,8 @@ Routes
 	/navbar
 
 To-Do
+Connect ViewVideo.js with Rails backend video blob.
+
 When "Sign In" is clicked swap spinning React logo with an animated "Welcome" object.
 Then make the Navbar appear at the top.
 When "Videos" is clicked swap the "Welcome" object with the Video.

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
 class NavBar extends Component {
-	constructor(props) {
+	/*constructor(props) {
 		super(props);
-		/*	this.state.about = {ClickedAbout: false}
+			this.state.about = {ClickedAbout: false}
 			this.state.videos = {ClickedVideos: false}
 			this.state.photos = {ClickedPhotos: false}
 
 			this.handleClick = this.handleClick.bind(this);
-	*/}
+	}
 
 	/*handleClickAbout() {
 		this.setState(state => ({
@@ -35,7 +35,7 @@ class NavBar extends Component {
 
 	  render() {	
 	    return <div className="navbar" class="clearfix">
-	    		<span>
+	    		<span class="style">
 	    		<button 
 	    			className="button-navbar" 
 	    			id="about" 

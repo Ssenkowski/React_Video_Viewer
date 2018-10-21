@@ -6,6 +6,7 @@ import SignIn from './components/SignIn'
 import ViewVideo from './components/ViewVideo'
 import PhotoGallery from './components/PhotoGallery'
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           < NavBar />
           <img src={logo} className="App-logo" alt="logo" />
           < SignIn />
+          < Footer />
 
           <a
             className="App-link"
@@ -24,9 +26,8 @@ class App extends Component {
           >
           </a>
         </header>
-
-        < Welcome />
         < ViewVideo />
+        < Welcome />
         < PhotoGallery />
 
       </div>

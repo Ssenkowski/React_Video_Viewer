@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #12191c;
 }
 
 .App-logo {
@@ -43,7 +44,7 @@
     font-weight: bold;
     border-style: hidden;
     box-shadow: 10px 10px 10px black, 0px 3px 15px rgba(0,0,0,.4);
-    font-family: cursive;
+    
 }
 
 .button-sign-in:active {
@@ -70,8 +71,9 @@
     padding: 0px;
     width: 100%;
     background-color: #000000cc;
-    margin: 150px;
+    margin-bottom: 150px;
     border-color: #000000cc;
+
 }
 
 .navbar {
@@ -79,7 +81,7 @@
       background: #000000cc;
       width: 100%;
       padding: 0px;
-      margin: 75px;
+      margin-bottom: 75px;
       font-size: 20px;
       font-weight: bold;
       border-style: solid;
@@ -93,12 +95,11 @@
       padding: 12px;
       border-radius: 0%;
       margin-right: 100px;
-      font-size: 20px;
-      font-weight: bold;
+      font-size: 75px;
       border-style: hidden;
       /*box-shadow: 10px 10px 10px black, 0px 3px 15px rgba(0,0,0,.4);
       border-color: black */
-      font-family: cursive;
+      font-family: 'Miss Fajardose', cursive;
 
 }
 
@@ -113,4 +114,66 @@
 
 #about {
   margin-left: 100px;
+}
+
+/* Footer */
+
+.fa {
+    padding: 20px;
+    margin: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
 }

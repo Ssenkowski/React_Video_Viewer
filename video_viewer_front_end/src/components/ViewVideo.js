@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-
-class ViewVideo extends Component {
-
-  render() {
-    return (
-      <div>
-        <h1>Your Video's</h1>
-              {/* Insert Video's here */}
-
-      </div>
-    );
-  }
-};
+import VideoPlayer from 'react-simple-video-player';
+ 
+const ViewVideo = () => (
+  <VideoPlayer
+    url="https://youtu.be/20dKBgFjC9k"
+    poster=""
+    width={1200}
+    height={900}
+    autoplay
+  />
+);
 
 export default ViewVideo;
