@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Videos from './Navbar/Videos'
+import Photos from './Navbar/Photos'
+import About from './Navbar/About'
+
 
 class NavBar extends Component {
 	/*constructor(props) {
@@ -36,23 +40,9 @@ class NavBar extends Component {
 	  render() {	
 	    return <div className="navbar" class="clearfix">
 	    		<span class="style">
-	    		<button 
-	    			className="button-navbar" 
-	    			id="about" 
-	    			onClick={this.props.handleClick} 
-	   		   > About </button>
-
-			   <button 
-	    			className="button-navbar" 
-	    			id="videos" 
-	    			onClick={this.props.handleClick} 
-	   		   > Videos </button>
-
-	   		   <button 
-	    			className="button-navbar" 
-	    			id="photos" 
-	    			onClick={this.props.handleClick} 
-	   		   > Photos </button>
+	    			<Videos />
+	    			< About />
+	    			< Photos />
 	   		   </span>
 	   		   </div>
   }	

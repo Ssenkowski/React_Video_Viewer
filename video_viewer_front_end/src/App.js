@@ -5,9 +5,12 @@ import './App.css';
 import Welcome from './components/Welcome'
 import SignIn from './components/SignIn'
 import ViewVideo from './components/ViewVideo'
-import PhotoGallery from './components/PhotoGallery/PhotoGallery'
+import PhotoGallery from './components/PhotoGallery'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
+import * as LeftArrow from './components/PhotoGallery/LeftArrow'
+import * as RightArrow from './components/PhotoGallery/RightArrow'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class App extends Component {
   render() {

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import LeftArrow from './PhotoGallery/LeftArrow'
+import RightArrow from './PhotoGallery/RightArrow'
 
 class PhotoGallery extends Component {
 
@@ -6,9 +8,10 @@ class PhotoGallery extends Component {
     return (
       <div>
         <h1>Your Photos's</h1>
-        <button> Prev </button>
+        /* Using a module component "Arrows"*/
+        < LeftArrow />
 			{/* Insert Image's here */}
-        <button> Next </button>
+        < RightArrow />
 
       </div>
     );
