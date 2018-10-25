@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
+import Gallery from 'react-photo-gallery';
 
-export const Photos = (props) =>  (
- <div>
-		{props.photos.map((photo) =>
-	 		 <li key={photo.id}> 
-	  			<h3 className="photo">{photo.name}</h3>
-	  			<img src={photo.url} alt={photo.name} key={photo.id} className="photos"/>
-	  		</li>
-	)};
- </div>
-);
+class Photos extends React.Component {
+    render() {
+    return (
+        <Gallery photos={this.props.photos} />
+    );
+    }
+}
 
 export default Photos;
