@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
-import LeftArrow from './PhotoGallery/LeftArrow'
-import RightArrow from './PhotoGallery/RightArrow'
+import Previous from './PhotoGallery/Previous'
+import Next from './PhotoGallery/Next'
+import AddImage from './PhotoGallery/AddImage'
+import Photos from './PhotoGallery/Photos'
 
 class PhotoGallery extends Component {
 
   render() {
     return (
       <div>
-        <h1>Your Photos's</h1>
-        /* Using a module component "Arrows"*/
-        < LeftArrow />
+        <h1 className="photos">Your Photos's</h1>
+{        /* Using a module component "Arrows"*/
+        }        < Previous />
 			{/* Insert Image's here */}
-        < RightArrow />
+		< Photos photos={this.props.photos}/>
+		< AddImage />
+        < Next />
 
       </div>
     );

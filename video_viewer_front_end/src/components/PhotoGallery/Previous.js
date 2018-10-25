@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-export const LeftArrow = () =>  (
+export const Previous = () =>  (
   <div> 
   	<button> Prev </button>
   </div>
 );
 
-export default LeftArrow;
+export default Previous;

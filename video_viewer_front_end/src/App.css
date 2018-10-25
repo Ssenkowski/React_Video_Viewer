@@ -112,6 +112,14 @@ h6{
     transform: translate(0, 4px);  
 }
 
+/* Photo Text */
+.photos {
+  color: white;
+}
+
+.photo {
+  color: white;
+}
 /* Navbar */
 
 .clearfix {

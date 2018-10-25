@@ -39,7 +39,7 @@ class NavBar extends Component {
 
 	  render() {	
 	    return <div className="navbar clearfix">
-	    		<span class="style">
+	    		<span className="style">
 	    			<Videos />
 	    			< About />
 	    			< Photos />

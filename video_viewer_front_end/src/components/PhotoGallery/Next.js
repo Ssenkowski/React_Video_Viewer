@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-export const RightArrow = () =>  (
+export const Next = () =>  (
   <div> 
   	<button> Next </button>
   </div>
 );
 
-export default RightArrow;
+export default Next;
