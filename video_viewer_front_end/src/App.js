@@ -16,28 +16,38 @@ const photos = [
 {
   id: 1,
   name: "Pioneer School",
-  src: "https://imgur.com/a/EuRnEyx"
+  src: "https://i.imgur.com/o9bEaOJ.jpg",
+  width: 4,
+  height: 3
 },
 {
   id: 2,
   name: "Steven's bff",
-  src: "https://imgur.com/1AI4TD2"
+  src: "https://i.imgur.com/1AI4TD2.jpg",
+  width: 4,
+  height: 3
 },
 {
     id: 3,
   name: "Love your ring!",
-  src: "https://imgur.com/21EjcNc"
+  src: "https://i.imgur.com/21EjcNc.jpg",
+  width: 4,
+  height: 3
 },
 {
     id: 4,
   name: "Family fun",
-  src: "https://imgur.com/Y9pIKeG"
+  src: "https://i.imgur.com/Y9pIKeG.jpg",
+  width: 4,
+  height: 3
 },
 {
     id: 5,
 
   name: "The glance",
-  src: "https://imgur.com/vWTS4Ly"
+  src: "https://i.imgur.com/vWTS4Ly.jpg",
+  width: 4,
+  height: 3
 },
 ]
 

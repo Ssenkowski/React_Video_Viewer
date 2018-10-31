@@ -3,4 +3,7 @@ class User < ApplicationRecord
 	  has_many_attached :images
   	  has_many_attached :videos
   	  has_many :messages
+  	  has_one :about
+
+  	  
 end
