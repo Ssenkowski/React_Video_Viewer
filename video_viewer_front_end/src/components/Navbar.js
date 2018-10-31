@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Videos from './Navbar/Videos'
 import Photos from './Navbar/Photos'
 import About from './Navbar/About'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 class NavBar extends Component {
@@ -40,8 +41,14 @@ class NavBar extends Component {
 	  render() {	
 	    return <div className="navbar clearfix">
 	    		<span className="style">
+	    			<Route path="/videos" 
+	    			component={ViewVideo} />
 	    			<Videos />
+	    			<Route path="/about" 
+	    			component={About} />
 	    			< About />
+	    			<Route path="/photos" 
+	    			component={PhotoGallery} />
 	    			< Photos />
 	   		   </span>
 	   		   </div>
