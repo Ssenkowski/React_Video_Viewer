@@ -1,3 +1,5 @@
+import rootReducer from "./combineReducers";
+
 export default function photoApp(state = {
   videos: [],
   photos: []
@@ -43,3 +45,4 @@ export default function photoApp(state = {
       return state;
     }
 };
+

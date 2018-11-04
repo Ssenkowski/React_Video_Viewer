@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { addPhoto } from '../actions';
-import { addVideo } from '../actions';
+import { addPhoto } from './actions/mediaActions';
 import uuid from 'uuid';
 import { connect } from 'react-redux';
 
-export class AddPhoto extends Component {
+export class AddImage extends Component {
 
   state = {
     photoName: '',
@@ -43,4 +42,4 @@ export class AddPhoto extends Component {
   }
 };
 
-export default connect(null, { addPhoto, addVideo })(AddMedia);
+export default connect(null, { addPhoto })(AddImage);

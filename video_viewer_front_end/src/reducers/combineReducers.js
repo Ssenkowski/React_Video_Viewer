@@ -1,4 +1,5 @@
 import { combineReducers } from "redux";
+import uuid from "uuid";
 
 const rootReducer = combineReducers({
   videos: videosReducer,
@@ -24,7 +25,6 @@ function photosReducer(state = [], action) {
 }
 /*Add video functionality later */
 
-import uuid from "uuid";
 
 function videosReducer(state = [], action) {
   let idx;

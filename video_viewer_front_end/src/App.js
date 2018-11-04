@@ -4,8 +4,8 @@ import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/Welcome'
 import SignIn from './components/SignIn'
-import ViewVideo from './components/ViewVideo'
-import PhotoGallery from './components/PhotoGallery'
+import Videos from './components/Videos'
+import Photos from './components/Photos'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import * as Previous from './components/PhotoGallery/Previous'
@@ -65,7 +65,7 @@ class App extends Component {
 
         </header>
         < Videos />
-        < PhotoGallery photos={photos}/>
+        < Photos photos={photos}/>
 
       </div>
     );

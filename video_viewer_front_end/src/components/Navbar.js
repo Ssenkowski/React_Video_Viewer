@@ -42,13 +42,13 @@ class NavBar extends Component {
 	    return <div className="navbar clearfix">
 	    		<span className="style">
 	    			<Route path="/videos" 
-	    			component={ViewVideo} />
+	    			component={Videos} />
 	    			<Videos />
 	    			<Route path="/about" 
 	    			component={About} />
 	    			< About />
 	    			<Route path="/photos" 
-	    			component={PhotoGallery} />
+	    			component={Photos} />
 	    			< Photos />
 	   		   </span>
 	   		   </div>
