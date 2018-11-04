@@ -64,7 +64,7 @@ class App extends Component {
           < Footer />
 
         </header>
-        < ViewVideo />
+        < Videos />
         < PhotoGallery photos={photos}/>
 
       </div>

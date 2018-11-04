@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import VideoPlayer from 'react-simple-video-player';
  
-const ViewVideo = () => (
+const Videos = () => (
   <VideoPlayer
     url="http://youtu.be/20dKBgFjC9k"
     poster=""
@@ -10,4 +10,4 @@ const ViewVideo = () => (
   />
 );
 
-export default ViewVideo;
+export default Videos;

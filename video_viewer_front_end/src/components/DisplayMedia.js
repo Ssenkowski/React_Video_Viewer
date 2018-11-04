@@ -14,6 +14,10 @@ class PhotoGallery extends Component {
         }        < Previous />
 			{/* Insert Image's here */}
 		< Photos photos={this.props.photos}/>
+    <Route
+      path="/photos/new"
+      component={AddImage}
+      />
 		< AddImage />
         < Next />
 
