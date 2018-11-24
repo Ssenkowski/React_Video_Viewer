@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import VideoPlayer from './VideoPlayer';
 
 class SignIn extends Component {
 	constructor(props) {
@@ -7,15 +8,16 @@ class SignIn extends Component {
 		this.handleClick = this.handleClick.bind(this);
 	}
 
-	handleClick() {
-		this.setState(state => ({
-			isSigningIn: !state.isSigningIn
-		}));
-		console.log(this.state)
-	}
+		handleClick(e){
+			e.preventDefault();
+				 {return (< VideoPlayer />)}
+		}
+
 
 	  render() {
-	    return <button className="button-sign-in" onClick={this.props.handleClick}
+			return <button 
+					className="button-sign-in" 
+					onClick={this.handleClick}
 	    		style= {this.styleButton}
 	   		   > {this.state.isSigningIn ? 'Sign In' : 'Signing In...'} </button>;
   }
