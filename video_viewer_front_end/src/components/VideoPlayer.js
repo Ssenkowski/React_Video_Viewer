@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import VideoPlayer from 'react-simple-video-player';
  
 const Videos = () => (

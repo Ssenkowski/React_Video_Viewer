@@ -1,8 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
+
+function about(e) {
+	e.preventDefault();
+	console.log('The link was clicked')
+}
 
 export const About = () =>  (
   <div> 
-  	<button 
+		<button 
+		 onClick={about}
 	   className="button-navbar" 
 	   id="about" 
 	> About </button>

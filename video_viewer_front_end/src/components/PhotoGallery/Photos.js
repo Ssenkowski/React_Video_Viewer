@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Gallery from 'react-photo-gallery';
 
 class Photos extends React.Component {

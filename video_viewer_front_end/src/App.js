@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/Welcome'
 import SignIn from './components/SignIn'
-import Videos from './components/Videos'
+import VideoPlayer from './components/VideoPlayer'
 import Photos from './components/Photos'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
@@ -48,25 +48,27 @@ const photos = [
   src: "https://i.imgur.com/vWTS4Ly.jpg",
   width: 4,
   height: 3
-},
+}
 ]
+
+function handleClick(e){
+  e.preventDefault();
+ console.log('The button was clicked')
+}
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <NavBar />
-
-          < Welcome />
+          /*Render the Navbar here*/ 
           <img src={logo} className="App-logo" alt="logo" />
-          < SignIn />
+          < SignIn onClick={handleClick}/>
+          <div className="content">
+            /*Render the photos,about page or videos here*/ 
+          </div>
           < Footer />
-
         </header>
-        < Videos />
-        < Photos photos={photos}/>
-
       </div>
     );
   }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { addPhoto } from './actions/mediaActions';
+import { addPhoto } from '../../actions/media';
 import uuid from 'uuid';
 import { connect } from 'react-redux';
 
