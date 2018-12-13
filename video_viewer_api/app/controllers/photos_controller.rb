@@ -1,4 +1,6 @@
 class PhotosController < ApplicationController
+
+	before_action :set_photo, only: [:show, :update, :destroy]
 	
 	def index
 		render json: Photo.all
@@ -16,14 +18,14 @@ class PhotosController < ApplicationController
 	end
 
 	def show
-		render json: Photo.find_by_id(id: params[:id])
+		render json: @photo
 	end
 
 	def update
 		if @photo.update(photo_params)
 			render json: @photo
 		else
-		  render json: { message: photo.errors }, status: 301
+		  render json: { message: @photo.errors }, status: 301
 		end
 
 	end
@@ -40,6 +42,10 @@ class PhotosController < ApplicationController
 	private
 
 	def photo_params
-		params.require(:photo).permit(:url, :name)
+		params.require(:photo).permit(:url, :name, :description)
+	end
+
+	def set_photo
+		@photo = Photo.find_by(id: params[:id])
 	end
 end

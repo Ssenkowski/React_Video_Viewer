@@ -1,10 +1,11 @@
-class Api::VideoController < ApplicationController
-	skip_before_action :verify_authenticity_token
+class VideoController < ApplicationController
 
 	before_action :set_video, only: [:show, :update, :destroy]
 
 	def index
-		render json: Video.all
+		video = Video.all
+
+		render json: video
 	end
 
 	def new
@@ -12,18 +13,17 @@ class Api::VideoController < ApplicationController
 	end
 
 	def create
-		
-		@video = Video.new(video_params)
+		video = Video.new(video_params)
 
-		if @video.save
-			render json: @video
+		if video.save
+			render json: video
 		else
-			render json: { message: @video.errors }, status: 301
+			render json: { message: video.errors }, status: 301
 		end
 	end
 
 	def show
-		render json: Video.find_by_id(id: params[:id])
+		render json: @video
 	end
 
 	def update
@@ -47,10 +47,11 @@ class Api::VideoController < ApplicationController
 	private
 
 	def video_params
-		params.require(:video).permit(:url, :name)
+		params.require(:video).permit(:url, :name, :user_id)
 	end
 
 	def set_video
-		@video = Video.find_by_id(id: params[:id])
+		@video = Video.find_by(id: params[:id])
 	end
+
 end

@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import * as Previous from './components/PhotoGallery/Previous'
 import * as Next from './components/PhotoGallery/Next'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import PhotoGallery from './components/Photos';
 
 const photos = [
 {
@@ -61,12 +62,11 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          /*Render the Navbar here*/ 
-          <img src={logo} className="App-logo" alt="logo" />
-          < SignIn onClick={handleClick}/>
+          < NavBar />
           <div className="content">
-            /*Render the photos,about page or videos here*/ 
+            < VideoPlayer />
           </div>
+          < SignIn onClick={handleClick}/>
           < Footer />
         </header>
       </div>
