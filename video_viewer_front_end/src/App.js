@@ -8,6 +8,7 @@ import VideoPlayer from './components/VideoPlayer'
 import Photos from './components/Photos'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
+import PhotosService from './services/PhotosService';
 import * as Previous from './components/PhotoGallery/Previous'
 import * as Next from './components/PhotoGallery/Next'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -58,6 +59,18 @@ function handleClick(e){
 }
 
 class App extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+      photos: []
+    }
+  }
+
+  componentDidMount() {
+    PhotosService.fetchPhotos().then(photos => this.setState({ photos }))
+  }
+
   render() {
     return (
       <div className="App">
@@ -65,6 +78,7 @@ class App extends Component {
           < NavBar />
           <div className="content">
             < VideoPlayer />
+            < Photos photos={this.state.photos} />
           </div>
           < SignIn onClick={handleClick}/>
           < Footer />

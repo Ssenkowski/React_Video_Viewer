@@ -3,7 +3,8 @@ class PhotosController < ApplicationController
 	before_action :set_photo, only: [:show, :update, :destroy]
 	
 	def index
-		render json: Photo.all
+		@photos = Photo.all
+		render json: @photos
 	end
 
 	def create
