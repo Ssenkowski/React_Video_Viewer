@@ -5,10 +5,10 @@ import AddImage from './PhotoGallery/AddImage'
 import Photos from './PhotoGallery/Photos'
 import { BrowserRouter as Route } from "react-router-dom";
 
-class PhotoGallery extends Component {
+class DisplayPhotos extends Component {
 
   render() {
-    console.log(this.props)
+    debugger
     return (
       <div>
         <h1 className="photos">Your Photos's</h1>
@@ -28,4 +28,4 @@ class PhotoGallery extends Component {
   }
 };
 
-export default PhotoGallery;
+export default DisplayPhotos;

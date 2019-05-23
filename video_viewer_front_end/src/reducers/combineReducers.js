@@ -1,6 +1,8 @@
 import { combineReducers } from "redux";
 import uuid from "uuid";
 
+import photosReducer from './photosReducer'
+
 const rootReducer = combineReducers({
   videos: videosReducer,
   photos: photosReducer
@@ -9,20 +11,6 @@ const rootReducer = combineReducers({
 
 export default rootReducer;
 
-function photosReducer(state = [], action) {
-  let idx;
-  switch (action.type) {
-    case "ADD_PHOTO":
-      return [...state, action.photo];
-
-    case "REMOVE_PHOTO":
-      idx = state.indexOf(action.id);
-      return [...state.slice(0, idx), ...state.slice(idx + 1)];
-
-    default:
-      return state;
-  }
-}
 /*Add video functionality later */
 
 

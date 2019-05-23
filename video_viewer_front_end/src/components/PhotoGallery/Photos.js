@@ -3,6 +3,8 @@ import Gallery from 'react-photo-gallery';
 
 class Photos extends React.Component {
     render() {
+        console.log(this.props)
+
         const photos = this.props.photos
         const PHOTO_SET = [
             photos.map(photo =>

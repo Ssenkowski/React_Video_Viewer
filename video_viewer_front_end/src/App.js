@@ -5,53 +5,20 @@ import './App.css';
 import Welcome from './components/Welcome'
 import SignIn from './components/SignIn'
 import VideoPlayer from './components/VideoPlayer'
-import Photos from './components/Photos'
-import NavBar from './components/NavBar'
+import DisplayPhotos from './components/DisplayPhotos'
+import NavBar from './components/Navbar/NavBar'
 import Footer from './components/Footer'
 import PhotosService from './services/PhotosService';
 import * as Previous from './components/PhotoGallery/Previous'
 import * as Next from './components/PhotoGallery/Next'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import PhotoGallery from './components/Photos';
+import Photos from './components/PhotoGallery';
 
-const photos = [
-{
-  id: 1,
-  name: "Pioneer School",
-  src: "https://i.imgur.com/o9bEaOJ.jpg",
-  width: 4,
-  height: 3
-},
-{
-  id: 2,
-  name: "Steven's bff",
-  src: "https://i.imgur.com/1AI4TD2.jpg",
-  width: 4,
-  height: 3
-},
-{
-    id: 3,
-  name: "Love your ring!",
-  src: "https://i.imgur.com/21EjcNc.jpg",
-  width: 4,
-  height: 3
-},
-{
-    id: 4,
-  name: "Family fun",
-  src: "https://i.imgur.com/Y9pIKeG.jpg",
-  width: 4,
-  height: 3
-},
-{
-    id: 5,
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 
-  name: "The glance",
-  src: "https://i.imgur.com/vWTS4Ly.jpg",
-  width: 4,
-  height: 3
-}
-]
+import { fetchPhotos } from './actions/photosActions'
+
 
 function handleClick(e){
   e.preventDefault();
@@ -68,17 +35,20 @@ class App extends Component {
   }
 
   componentDidMount() {
-    PhotosService.fetchPhotos().then(photos => this.setState({ photos }))
+    // PhotosService.fetchPhotos().then(photos => this.setState({ photos }))
+    this.props.fetchPhotos()
   }
 
   render() {
+    let { photos } = this.props 
+    debugger
     return (
       <div className="App">
         <header className="App-header">
           < NavBar />
           <div className="content">
             < VideoPlayer />
-            < Photos photos={this.state.photos} />
+            < DisplayPhotos photos={photos} />
           </div>
           < SignIn onClick={handleClick}/>
           < Footer />
@@ -88,4 +58,14 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    photos: state.photos.all
+  }
+}
+
+const mapDispatchToProps = dispatch => bindActionCreators({
+  fetchPhotos
+}, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
