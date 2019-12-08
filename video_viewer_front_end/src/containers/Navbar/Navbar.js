@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Videos from './Navbar/Videos'
-import Photos from './Navbar/Photos'
-import About from './Navbar/About'
+import Videos from './Videos'
+import Photos from './Photos'
+import About from './About'
 import { BrowserRouter as Route } from "react-router-dom";
 
 

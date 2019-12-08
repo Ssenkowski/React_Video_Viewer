@@ -9,9 +9,9 @@ export const About = () =>  (
   <div> 
 		<button 
 		 onClick={about}
-	   className="button-navbar" 
-	   id="about" 
-	> About </button>
+	   	className="button-navbar" 
+	   	id="about" 
+		> About </button>
   </div>
 );
 
